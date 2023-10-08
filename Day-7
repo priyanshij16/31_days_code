@@ -1,0 +1,12 @@
+# MAXIMUM BINARY TREE:
+ just return the max Node present in BT
+
+code:
+ if(root==null)
+{
+  return;
+}
+else{
+ return max(root->key, max(fun(root->left), fun(root->right) );
+
+}
