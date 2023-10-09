@@ -1,0 +1,11 @@
+QS: inverted BT/ Mirror BT
+  ex>> 
+   1
+  / \
+  2  3  o/p:>> 3 2 
+    
+    
+if(!node) return ;
+        swap(node->left, node->right);
+        mirror(node->left);
+          mirror(node->right);
