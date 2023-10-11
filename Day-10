@@ -1,0 +1,9 @@
+Foldable Binary Tree:
+
+bool solve(Node *a, Node*b){
+     if(!a && !b) return false;
+     if(!a|| !b)
+     return true;
+     
+     return solve(a->left, b->right)&&
+         solve(a->right, b->left);
